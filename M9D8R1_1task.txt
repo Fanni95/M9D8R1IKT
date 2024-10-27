@@ -1,0 +1,48 @@
+/Local Parancsok/
+
+Repozitorium inicializálása:
+git init
+Ezzel a paranccsal létrehozunk egy új Git repozitóriumot a jelenlegi könyvtárban.
+
+Fájlok hozzáadása a staging area-hoz:
+git add <fájl_neve> vagy git add . (minden fájl hozzáadása)
+Ez a parancs a megváltozott fájlokat a következő commit-hoz készíti elő.
+
+Commit létrehozása:
+git commit -m "Commit üzenet"
+Ezzel a paranccsal rögzítjük a staging area-ban lévő változtatásokat.
+
+Ág létrehozása:
+git branch <ág_neve>
+
+Új ágat hozunk létre a repozitóriumban.
+Ág váltása:
+git checkout <ág_neve>
+
+Ezzel a paranccsal átváltunk egy másik ágra.
+Ágak egyesítése:
+git merge <ág_neve>
+Az aktuális ágba egyesítjük a megadott ágat.
+
+
+/Remote Parancsok/
+
+Távoli repozitórium hozzáadása:
+git remote add origin <repo_url>
+Ezzel a paranccsal hozzáadunk egy távoli repozitóriumot, amelyet az origin néven hivatkozunk.
+
+Változtatások feltöltése a távoli repozitóriumba:
+git push origin <ág_neve>
+A helyi változtatásokat feltöltjük a megadott ágra a távoli repozitóriumban.
+
+Változtatások letöltése a távoli repozitóriumból:
+git pull origin <ág_neve>
+Ezzel a paranccsal letöltjük és egyesítjük a távoli repozitóriumban lévő változtatásokat a helyi ággal.
+
+Távoli repozitórium állapotának ellenőrzése:
+git remote -v
+Megmutatja a távoli repozitóriumok URL-jeit.
+
+Ágak listázása:
+git branch -a
+Ezzel a paranccsal megtekinthetjük az összes helyi és távoli ágat.
